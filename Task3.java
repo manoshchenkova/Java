@@ -14,12 +14,19 @@ public class Task3 {
 
     }
 
-    static int triangleNumber(int numberN) {
+    static int triangleNumber(int n) {
 
-        if (numberN == 1) {
+        if (n == 1) {
+            System.out.println("*");
             return 1;
         }
-        return triangleNumber(numberN - 1) + numberN;
+        int result = n + triangleNumber(n - 1);
+        String s = "";
+        for (int i = 0; i < result; i++) {
+            s = s + "*";
+        }
+        System.out.println(s);
+        return result;
     }
 
 }
