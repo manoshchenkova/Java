@@ -16,11 +16,11 @@ public class ICQ implements Chat {
 	}
 
 	@Override
-	public void sendMessage(String text, User me) {
+	public void sendMessage(Message message, User me) {
 
 		for (User user : users) {
 			if (!user.name.equals(me.name)) {
-				user.printMessage(text);
+				user.printMessage(message);
 			}
 
 		}

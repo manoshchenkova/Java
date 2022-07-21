@@ -8,13 +8,15 @@ public class MessengerApp {
 		icq.appendUser(user1);
 		icq.appendUser(user2);
 		
-		user1.sendMsg("Hi!");
-		user2.sendMsg("Good afternoon!");
+		user1.sendMsg(new TextMessage("Hi!"));
+		user2.sendMsg(new TextMessage("Good afternoon!"));
 		
 		User user3 = new User("Ivan", icq);
 		icq.appendUser(user3);
 		
-		user3.sendMsg("Hi everyone!");
+		user3.sendMsg(new TextMessage("Hi everyone!"));
+		
+		user1.sendMsg(new EmojiMessage(Emoji.GRINNING_FACE));
 	}
 
 

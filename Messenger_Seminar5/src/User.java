@@ -9,14 +9,14 @@ public class User {
 		this.chatroom = chatroom;
 	}
 
-	void printMessage(String msg) {
+	void printMessage(Message msg) {
 
-		System.out.printf("Чат %s %s\n", name, msg);
+		System.out.printf("Чат %s: %s\n", name, msg.toChatMessage());
 	}
 
-	void sendMsg(String text) {
+	void sendMsg(Message message) {
 
-		chatroom.sendMessage(text, this);
+		chatroom.sendMessage(message, this);
 
 	}
 }
