@@ -17,6 +17,16 @@ public class MessengerApp {
 		user3.sendMsg(new TextMessage("Hi everyone!"));
 		
 		user1.sendMsg(new EmojiMessage(Emoji.GRINNING_FACE));
+		
+		Admin admin = new Admin("Vasyl", icq);
+		icq.appendUser(admin);
+		
+		admin.sendMsg(new TextMessage("Maria will be banned"));
+		admin.banUser(user1);
+		
+		user1.sendMsg(new TextMessage("What a pity"));
+		
+		user2.sendMsg(new TextMessage("Why?"));
 	}
 
 
