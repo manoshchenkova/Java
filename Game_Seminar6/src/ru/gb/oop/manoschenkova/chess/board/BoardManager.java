@@ -1,7 +1,5 @@
-package ru.gb.oop.manoschenkova.chess;
+package ru.gb.oop.manoschenkova.chess.board;
 
-import ru.gb.oop.manoschenkova.chess.board.Board;
-import ru.gb.oop.manoschenkova.chess.board.BoardColumn;
 import ru.gb.oop.manoschenkova.chess.figures.Colour;
 import ru.gb.oop.manoschenkova.chess.figures.Ferz;
 import ru.gb.oop.manoschenkova.chess.figures.Figure;

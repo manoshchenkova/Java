@@ -1,6 +1,7 @@
 package ru.gb.oop.manoschenkova.chess;
 
 import ru.gb.oop.manoschenkova.chess.board.Board;
+import ru.gb.oop.manoschenkova.chess.board.BoardManager;
 
 public class GameApp {
 
